@@ -1,44 +1,29 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-
   <head>
-
-  <title>This is my webpage!!</title>
-
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width">
-
-  <body>
-
-	<script src ="script.js"></script>
-
-	<h1>Content Creation Recommendation System</h1>
-
-	<h3>Developed by <em>Wenxi Gao</em> <h3>
-
-	  
-
-	<input id="username_input" type="text"></input>
-
-	<button onclick="getSentiment()">Find recommended</button>
-
-	<p>
-
-		<label id="result_label">The Sentiment was</label>
-
-	</p>
-
-  
-
-  </body>
-
-  <link href="style.css" rel="stylesheet" type="text/css" />
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Predictor for YouTuber</title>
+    <h1>Predictor for YouTuber</h1>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
 
+  <body>
+    <script src="script.js"></script>
+    <div id = "input">
+      <input id ="user_input" type ="text"></input>
+    </div>
 
+    <div id = "youtube_videos">
+      <iframe width="600" height="300" src = ""> 
+    </div>  
 
-<html>
+    <p>
+      <button onclick="prediction()">Predict</button>
+    </p>
+    <p>
+      <label id = "result"> The result </label> 
+    </p>
+  </body>
+</html>
