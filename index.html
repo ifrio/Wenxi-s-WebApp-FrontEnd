@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Predictor for YouTuber</title>
-    <h1>Predictor for YouTuber</h1>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-
-
+  <script src ="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <title>Predictor for YouTuber</title>
   <body>
-    <script src="script.js"></script>
-    <div id = "input">
-      <input id ="user_input" type ="text"></input>
-    </div>
 
-    <div id = "youtube_videos">
-      <iframe width="600" height="300" src = ""> 
-    </div>  
+    <!-- Header -->
+    <nav class="w3-bar w3-black">
+      <a href="#home" class="w3-button w3-bar-item">Predictor for YouTuber</a>
+    </nav>
 
-    <p>
-      <button onclick="prediction()">Predict</button>
-    </p>
-    <p>
-      <label id = "result"> The result </label> 
-    </p>
+    <!-- Predictor Description -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+      <h2 class="w3-wide">How it works...</h2>
+      <p class="w3-justify"> Quick descirption of how the program works and what it does.</p>
+    </section>
+
+    <!-- Predictors -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+      <div class="w3-half">
+        <p>Describe what you'd like to make</p>
+        <input id ="user_input" type ="text" placeholder="Type here"></input>
+        <button onclick="recommendVideo()">Predict</button>
+      </div>
+      <div class="w3-quarter">
+        <p>Whats Trending...</p>
+        <iframe id='rotate' width="500" height="300" src = "https://www.youtube.com/embed/J3svfiJvyb0" ></iframe>
+      </div>
+    </section>
+
+    <!-- Result -->
+    <label id="result_label">The Sentiment was</label>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+      <p class="w3-medium">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+      </p>
+    </footer>
+
+
   </body>
 </html>
+
