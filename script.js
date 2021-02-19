@@ -13,14 +13,12 @@
 function recommendVideo() {
 
 	var user_input = document.getElementById("user_input").value;
-
 	$.ajax({
-
 		url: "https://wenxis-youtube-recommendation-system.ishmaelrico.repl.co/recommendVideo/" + user_input, 
     success: function(result) {
+      console.log(result);
 			$("#result_label").text(result);
     }
-
 	});
 
 }
