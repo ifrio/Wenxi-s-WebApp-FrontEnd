@@ -13,9 +13,9 @@
 function recommendVideo() {
 
 	var user_input = document.getElementById("user_input").value;
-  console.log(user_input);
+  console.log('https://wenxis-youtube-recommendation-system.ishmaelrico.repl.co/recommendVideo/'+user_input);
 	$.ajax({
-		url: 'https://wenxis-youtube-recommendation-system.ishmaelrico.repl.co/recommendVideo/hellot', 
+		url: 'https://wenxis-youtube-recommendation-system.ishmaelrico.repl.co/recommendVideo/'+user_input, 
     success: function(result) {
 			$("#result_label").text(result);
     },
