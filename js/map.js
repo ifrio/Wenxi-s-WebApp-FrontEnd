@@ -17,7 +17,7 @@
         marker: {
 			// markers and locations------------------
             values: [ {
-                latLng: [ 40.7143528, -74.0059731 ],
+                latLng: [ 33.6856969, -117.8259819],
                 data: "Our office  - New York City",
                 options: {
                     icon: "images/marker.png"

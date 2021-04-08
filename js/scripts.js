@@ -351,6 +351,7 @@ function initOutdoor() {
     $("#contactform input, #contactform textarea").keyup(function() {
         $("#message").slideUp(1500);
     });
+
 	//  other functions   ------------------
     function showHidDes() {
         $(".show-hid-content").removeClass("ishid");
@@ -614,6 +615,23 @@ function initgalheight() {
         height: $(".p_horizontal_wrap").outerHeight(true) - d
     });
 }
+
+function recommendVideo() {
+
+	var user_input = document.getElementById("user_input").value;
+  console.log('https://wenxis-youtube-recommendation-system.ishmaelrico.repl.co/recommendVideo/'+user_input);
+	$.ajax({
+		url: 'https://wenxis-youtube-recommendation-system.ishmaelrico.repl.co/recommendVideo/'+user_input, 
+    success: function(result) {
+			$("#result_label").text(result);
+    },
+    error: function(data) {
+      console.log(data);
+    }
+	});
+
+}
+
 //   Init all fucntions  ------------------
 $(document).ready(function() {
     initOutdoor();
